@@ -53,9 +53,7 @@
                         <c:forEach items="${navList }" var="nav">
 					    	<li><a href="${pageContext.request.contextPath }/${nav.jumpLink }">${nav.name }</a></li>
 					   	</c:forEach>
-					   	<li><a href="#">${date }</a></li>
-                        <li><a href="#">${day }</a></li>
-                        <li><a href="#">天气晴</a></li>
+    <li class='date1'>${date }${day}</li><li class='weather' id="weather">泸州&nbsp;晴&nbsp;22℃-33℃</li>
                     </ul>
                     </div>
                 </div>

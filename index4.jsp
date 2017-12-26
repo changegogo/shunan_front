@@ -40,6 +40,7 @@
    <!--主体部分 -->
     <div class="row main" style="background:url(${pageContext.request.contextPath }/front/img/main1.jpg) no-repeat;background-size:100% ">  <!--1920*1245-->
         <!--导航部分-->
+    <%--<div class='container-fluid'>--%>
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="row" style="position: relative;top:-5px;z-index: 100">
                 <div class="col-md-12 col-sm-12 col-xs-12 nav"><!--1920*73-->
@@ -49,14 +50,13 @@
                         <c:forEach items="${navList }" var="nav">
 					    	<li><a href="${pageContext.request.contextPath }/${nav.jumpLink }">${nav.name }</a></li>
 					   	</c:forEach>
-					   	<li><a href="#">${date }</a></li>
-                        <li><a href="#">${day }</a></li>
-                        <li><a href="#">天气晴</a></li>
+					   	<li class='date1'>${date }${day}</li><li class='weather' id="weather">泸州&nbsp;晴&nbsp;22℃-33℃</li>
                     </ul>
                     </div>
                 </div>
             </div>
-        </div> <!--导航部分-->
+        <%--</div>--%>
+    </div><!--导航部分-->
         <!--　主体内容部分-->
         <div class="row mbody" style="position: relative;top:-5px;z-index: 0">
             <div class="col-md- col-sm-8 col-xs-8 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">

@@ -34,39 +34,39 @@ Basic Swiper Styles
 	-webkit-transition-property:-webkit-transform, left, top;
 	-webkit-transition-duration:0s;
 	-webkit-transform:translate3d(0px,0,0);
-	-webkit-transition-timing-function:ease;
+	-webkit-transition-timing-function:linear;
 	
 	-moz-transition-property:-moz-transform, left, top;
 	-moz-transition-duration:0s;
 	-moz-transform:translate3d(0px,0,0);
-	-moz-transition-timing-function:ease;
+	-moz-transition-timing-function:linear;
 	
 	-o-transition-property:-o-transform, left, top;
 	-o-transition-duration:0s;
 	-o-transform:translate3d(0px,0,0);
-	-o-transition-timing-function:ease;
+	-o-transition-timing-function:linear;
 	-o-transform:translate(0px,0px);
 	
 	-ms-transition-property:-ms-transform, left, top;
 	-ms-transition-duration:0s;
 	-ms-transform:translate3d(0px,0,0);
-	-ms-transition-timing-function:ease;
+	-ms-transition-timing-function:linear;
 	
 	transition-property:transform, left, top;
 	transition-duration:0s;
 	transform:translate3d(0px,0,0);
-	transition-timing-function:ease;
+	transition-timing-function:linear;
 
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 .swiper-free-mode > .swiper-wrapper {
-	-webkit-transition-timing-function: ease-out;
-	-moz-transition-timing-function: ease-out;
-	-ms-transition-timing-function: ease-out;
-	-o-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
+	-webkit-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-ms-transition-timing-function: linear;
+	-o-transition-timing-function: linear;
+	transition-timing-function: linear;
 	margin: 0 auto;
 }
 .swiper-slide {

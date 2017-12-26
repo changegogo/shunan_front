@@ -81,6 +81,10 @@
 }
 .concent .right ul{
     color: #888888;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    /*border:1px solid black;*/
 }
 .concent .right ul li{
     line-height: 35px;
@@ -88,6 +92,12 @@
 .concent .right ul li a{
     color: #888888;
     text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.concent .right ul li a:hover{
+    text-decoration: underline;
+    color: #e38d13;
 }
 .fenye{
     float:right;
@@ -100,4 +110,6 @@
     text-decoration: none;
     color: black;
 }
-
+.fenye a:hover{
+    text-decoration: underline;
+}
