@@ -76,10 +76,9 @@ body{
     height: 100%;
     pointer-events: none;
     z-index: 100001;
-    border:1px solid black;
 }
 #stars_box{
     width:60%;
     height: 150px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }

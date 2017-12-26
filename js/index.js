@@ -82,33 +82,31 @@ var Obj=function(){}   //创建一个对象
 Obj.prototype.drawStar=function(){     //增加对象原型方法drawStar
     var odiv=document.createElement('div');   //创建div
     var ord
-    odiv.style.width='52px';
+    odiv.style.width='60px';
     odiv.style.height='70px';
-    ord=Math.floor(360*Math.random())
+    ord=Math.floor(180*Math.random())
     odiv.style.transform="rotate("+ord+"deg)"
-    odiv.style.position='relative';   //设置div为相对定位
+    odiv.style.position='absolute';   //设置div为相对定位
     // alert(stars_box.offsetWidth)
     // alert(stars_box.offsetHeight)
-    odiv.style.left=Math.floor(stars_box.offsetWidth*Math.random()-55)+'px';   //div的left值不能超出屏幕的宽度
+    odiv.style.left=Math.floor(stars_box.offsetWidth*Math.random()-60)+'px';   //div的left值不能超出屏幕的宽度
     odiv.style.top=Math.floor(stars_box.offsetHeight*Math.random()-70)+'px';//div的left值不能超出屏幕的高度
     odiv.style.overflow='hidden';  //设置div的overflow为hidden
     stars_box.appendChild(odiv);   //添加div到stars_box元素上
     var ostar=document.createElement('img');   //再创建img元素
-    ostar.style.width='415px';
+    ostar.style.width='420px';
     ostar.style.height='70px';
-    ostar.src='front/img/start.png';
+    ostar.src='front/img/start1.png';
     ostar.style.position='absolute';   //设置img为绝对定位
     ostar.style.top='0px';
-    // ostar.style.transform="rotate(50deg)"
-    console.log(ostar)
     odiv.appendChild(ostar);   //把img添加到div中
     Play(ostar);    //实现动画闪烁的方法Play();
 }
 function Play(ele){
-    var i=Math.floor(Math.random()*52);  //为了使星星不同时闪烁，设置随机值
+    var i=Math.floor(Math.random()*7);  //为了使星星不同时闪烁，设置随机值
     var timer=setInterval(function(){     //每100ms执行一次匿名方法
         if(i<7){
-            ele.style.left=-i*52+'px';
+            ele.style.left=-i*60+'px';
             i++;
         }else{
             i=0;
@@ -116,7 +114,7 @@ function Play(ele){
     },100);
 }
 //使用for循环创建30个不同的对象
-for(var i=0;i<100;i++){
+for(var i=0;i<8;i++){
     var obj=new Obj();
     obj.drawStar();
 }
