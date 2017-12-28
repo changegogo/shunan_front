@@ -50,7 +50,7 @@
                         <c:forEach items="${navList }" var="nav">
 					    	<li><a href="${pageContext.request.contextPath }/${nav.jumpLink }">${nav.name }</a></li>
 					   	</c:forEach>
-					   	<li class='date1'>${date }${day}</li><li class='weather' id="weather">泸州&nbsp;晴&nbsp;22℃-33℃</li>
+					   	<li class='date1'>${date }&nbsp;&nbsp;${day}</li><li class='weather' id="weather">泸州&nbsp;&nbsp;小雨&nbsp;&nbsp;22℃-33℃</li>
                     </ul>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
                             </div>
                             <!--向下箭头-->
                             <div class="down" style="position: absolute;bottom: 0">
-                                <a href="${pageContext.request.contextPath }/news/newsList?newsTypeID=6&currentPage=1"><span class="cli">>>></span></a>
+                               <span class="cli">>>></span>
                             </div>
                         </div>
                     </div><!--专题活动-->
@@ -283,7 +283,7 @@
                 <!--小banner-->
                 <div class="row footer">
                 <c:forEach items="${linksList }" var="banner">
-                	<div class="col-md-2 col-sm-2 col-xs-2">
+                	<div class="col-md-2 col-md-2 col-md-2">
                 		<a href="${banner.jumpLink }">
                 			<c:if test="${banner.picUrl != null && banner.picUrl != ''}">
 	                			<img src="${pageContext.request.contextPath }/upload/${banner.picUrl}" alt="${banner.name }">

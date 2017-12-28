@@ -85,7 +85,7 @@
 .right .r1 li span:hover{ /*2017-12-26*/
     color: #e38d13;
 }
-@media screen and (min-width:1301px){
+@media screen and (min-width:1021px){
     .left{
         float: left;
     }
@@ -97,7 +97,7 @@
         margin-left: 0;
     }
 }
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1020px) {
     .left{
         float: none;
         margin: 0 auto;
